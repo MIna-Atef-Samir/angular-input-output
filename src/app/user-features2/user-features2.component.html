@@ -1,0 +1,11 @@
+<div class="parent">
+    <h2>Parent Element</h2>
+    <ul>
+      <li *ngFor="let todo of Todos">{{ todo }}</li>
+    </ul>
+    <app-user
+        [currentTodo]="currentTodo"
+        [Todos]="Todos"
+        (addNewTodo)="addTodo($event)"
+    ></app-user>
+</div>
