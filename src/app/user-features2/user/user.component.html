@@ -1,0 +1,8 @@
+<div class="child">
+    <h2>Child Component</h2>
+    <p>Today's task: <strong>{{ currentTodo }}</strong></p>
+    <label for="child-input">Write your task:</label><br>
+    <input type="text" id="child-input" style="margin: 10px;" #newtodolist>
+    <button (click)="onAddTodo(newtodolist.value); newtodolist.value=''">Add</button>
+    <button (click)="onPopTodo()">Pop</button>
+</div>
